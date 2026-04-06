@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Digital</title>
+    <title>Menú - La Botanita</title>
     <style>
-        /* Diseño base con fondo blanco */
+        /* Diseño base con fondo blanco estricto */
         body {
             background-color: #ffffff;
             color: #333333;
@@ -17,99 +17,268 @@
             margin-right: auto;
         }
         
-        /* Título del restaurante */
-        h1 {
+        /* Contenedor del Logo */
+        .logo-container {
             text-align: center;
-            color: #000000;
-            margin-bottom: 5px;
-            font-size: 28px;
-        }
-        
-        .subtitulo {
-            text-align: center;
-            color: #666666;
             margin-bottom: 30px;
-            font-size: 14px;
         }
 
-        /* Categorías (Bebidas, Platos, etc.) */
+        .logo-container img {
+            max-width: 250px;
+            height: auto;
+        }
+
+        /* Categorías */
         .categoria {
-            font-size: 20px;
-            font-weight: bold;
-            margin-top: 30px;
-            border-bottom: 2px solid #eeeeee;
+            font-size: 22px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #fbbc04; /* Amarillo del logo */
             padding-bottom: 5px;
-            color: #000000;
+            color: #7b113a; /* Color vino del logo */
+            text-align: center;
         }
 
-        /* Cada plato del menú */
-        .item {
+        /* Contenedor de cada item */
+        .item-row {
             display: flex;
             justify-content: space-between;
-            margin: 15px 0;
+            align-items: center;
+            margin: 10px 0;
+            padding: 5px 0;
         }
 
-        .detalles {
-            width: 80%;
-        }
-
-        .nombre {
+        .item-info {
+            display: flex;
+            gap: 15px;
             font-weight: bold;
             font-size: 16px;
         }
 
-        .descripcion {
-            font-size: 13px;
-            color: #666666;
-            margin-top: 4px;
-        }
-
-        .precio {
-            font-weight: bold;
-            font-size: 16px;
+        .item-nombre {
             color: #000000;
+        }
+
+        .item-unidad {
+            color: #666666;
+            font-weight: normal;
+        }
+
+        .item-precio {
+            font-weight: bold;
+            font-size: 16px;
+            color: #7b113a;
+        }
+
+        /* Descripción general de la categoría */
+        .descripcion-categoria {
+            font-size: 13px;
+            color: #555555;
+            font-style: italic;
+            text-align: center;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+        
+        /* Excepción para la Rusa en Bebidas */
+        .descripcion-item {
+            font-size: 12px;
+            color: #555555;
+            font-style: italic;
+            margin-top: 5px;
+            line-height: 1.4;
         }
     </style>
 </head>
 <body>
 
-    <h1>Mi Restaurante</h1>
-    <div class="subtitulo">Escanea, elige y disfruta</div>
+    <div class="logo-container">
+        <img src="logo.png" alt="La Botanita Logo">
+    </div>
+
+    <div class="categoria">Esquites</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Tradicional</span>
+            <span class="item-unidad">16 onz</span>
+        </div>
+        <span class="item-precio">$3.75</span>
+    </div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Tradicional</span>
+            <span class="item-unidad">8 onz</span>
+        </div>
+        <span class="item-precio">$2.50</span>
+    </div>
+    <div class="descripcion-categoria">
+        Elote desgranado, mayonesa, chipotle de la casa, cheddar y polvo picante a elección.
+    </div>
+
+    <div class="categoria">Charolas</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Clásica</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$5.75</span>
+    </div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Súper</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$6.75</span>
+    </div>
+    <div class="descripcion-categoria">
+        Cubierta de mayonesa, chipotle de la casa, cheddar, polvo picante al gusto y churro a elección: Doritos, Takis Fuego, Cheetos Flamin o Chips Fuego.
+    </div>
+
+    <div class="categoria">Marulote</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Clásica</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$7.00</span>
+    </div>
+    <div class="descripcion-categoria">
+        Churro a elección, elote desgranado, mayonesa, aderezo chipotle de la casa, queso cheddar, picante y maruchan.
+    </div>
+
+    <div class="categoria">Marucheto</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Marucheto</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$5.75</span>
+    </div>
+    <div class="descripcion-categoria">
+        Bowl con maruchan, elote desgranado, mayonesa, chipotle de la casa, cheddar, queso rallado y cheetos triturados.
+    </div>
+
+    <div class="categoria">Takilote</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Takilote</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$4.00</span>
+    </div>
+    <div class="descripcion-categoria">
+        Elote desgranado, mayonesa, chipotle de la casa, cheddar, polvo picante a elección dentro de un Taki.
+    </div>
+
+    <div class="categoria">Chips Elote</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Fuego</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$4.00</span>
+    </div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Jalapeño</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$4.00</span>
+    </div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Original</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$4.00</span>
+    </div>
+    <div class="descripcion-categoria">
+        Elote desgranado, mayonesa, chipotle de la casa, cheddar, polvo picante a elección.
+    </div>
+
+    <div class="categoria">Dorielote</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Dorielote</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$4.25</span>
+    </div>
+    <div class="descripcion-categoria">
+        Elote desgranado, mayonesa, chipotle de la casa, cheddar, polvo picante a elección dentro de un Dorito.
+    </div>
+
+    <div class="categoria">Elotes</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Elote entero</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$2.50</span>
+    </div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Elote empanizado</span>
+            <span class="item-unidad">1 unidad</span>
+        </div>
+        <span class="item-precio">$3.00</span>
+    </div>
+    <div class="descripcion-categoria">
+        Cubierta de mayonesa, chipotle de la casa, queso cheddar y polvo picante a elección.
+    </div>
+
+    <div class="categoria">Bowls</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Bowl</span>
+            <span class="item-unidad">16 onz</span>
+        </div>
+        <span class="item-precio">$4.00</span>
+    </div>
+    <div class="descripcion-categoria">
+        Elote desgranado, mayonesa, chipotle de la casa, cheddar, polvo picante a elección. Churro a elección: Doritos, Takis Flamin o Cheetos Flamin.
+    </div>
 
     <div class="categoria">Bebidas</div>
-    
-    <div class="item">
-        <div class="detalles">
-            <div class="nombre">Limonada con Hierbabuena</div>
-            <div class="descripcion">Refrescante y natural (500ml)</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Coca Cola</span>
+            <span class="item-unidad">354 ml</span>
         </div>
-        <div class="precio">$2.50</div>
+        <span class="item-precio">$1.25</span>
     </div>
-
-    <div class="item">
-        <div class="detalles">
-            <div class="nombre">Refresco de Cola</div>
-            <div class="descripcion">Lata de 355ml</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Coca Cola cero</span>
+            <span class="item-unidad">354 ml</span>
         </div>
-        <div class="precio">$1.50</div>
+        <span class="item-precio">$1.25</span>
     </div>
-
-    <div class="categoria">Platos Principales</div>
-    
-    <div class="item">
-        <div class="detalles">
-            <div class="nombre">Hamburguesa Clásica</div>
-            <div class="descripcion">Carne de res, queso, lechuga, tomate y papas fritas.</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Té Lipton</span>
+            <span class="item-unidad">355 ml</span>
         </div>
-        <div class="precio">$6.00</div>
+        <span class="item-precio">$1.25</span>
     </div>
-
-    <div class="item">
-        <div class="detalles">
-            <div class="nombre">Pizza Margarita</div>
-            <div class="descripcion">Salsa de tomate casera, mozzarella fresca y albahaca.</div>
+    <div class="item-row">
+        <div class="item-info">
+            <span class="item-nombre">Agua</span>
+            <span class="item-unidad"></span>
         </div>
-        <div class="precio">$8.50</div>
+        <span class="item-precio">$1.00</span>
+    </div>
+    <div class="item-row" style="margin-bottom: 0;">
+        <div class="item-info">
+            <span class="item-nombre">Rusa</span>
+            <span class="item-unidad">20 oz</span>
+        </div>
+        <span class="item-precio">$3.50</span>
+    </div>
+    <div class="descripcion-item">
+        "Rusa" Refrescante bebida típica mexicana con soda, chamoy, polvo picante, fruta picada, limón, sal y mucho hielo. ¡Perfecta para tus botanitas!
     </div>
 
 </body>
