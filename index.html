@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Digital</title>
+    <style>
+        /* Diseño base con fondo blanco */
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Título del restaurante */
+        h1 {
+            text-align: center;
+            color: #000000;
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+        
+        .subtitulo {
+            text-align: center;
+            color: #666666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        /* Categorías (Bebidas, Platos, etc.) */
+        .categoria {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 5px;
+            color: #000000;
+        }
+
+        /* Cada plato del menú */
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px 0;
+        }
+
+        .detalles {
+            width: 80%;
+        }
+
+        .nombre {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .descripcion {
+            font-size: 13px;
+            color: #666666;
+            margin-top: 4px;
+        }
+
+        .precio {
+            font-weight: bold;
+            font-size: 16px;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Mi Restaurante</h1>
+    <div class="subtitulo">Escanea, elige y disfruta</div>
+
+    <div class="categoria">Bebidas</div>
+    
+    <div class="item">
+        <div class="detalles">
+            <div class="nombre">Limonada con Hierbabuena</div>
+            <div class="descripcion">Refrescante y natural (500ml)</div>
+        </div>
+        <div class="precio">$2.50</div>
+    </div>
+
+    <div class="item">
+        <div class="detalles">
+            <div class="nombre">Refresco de Cola</div>
+            <div class="descripcion">Lata de 355ml</div>
+        </div>
+        <div class="precio">$1.50</div>
+    </div>
+
+    <div class="categoria">Platos Principales</div>
+    
+    <div class="item">
+        <div class="detalles">
+            <div class="nombre">Hamburguesa Clásica</div>
+            <div class="descripcion">Carne de res, queso, lechuga, tomate y papas fritas.</div>
+        </div>
+        <div class="precio">$6.00</div>
+    </div>
+
+    <div class="item">
+        <div class="detalles">
+            <div class="nombre">Pizza Margarita</div>
+            <div class="descripcion">Salsa de tomate casera, mozzarella fresca y albahaca.</div>
+        </div>
+        <div class="precio">$8.50</div>
+    </div>
+
+</body>
+</html>
