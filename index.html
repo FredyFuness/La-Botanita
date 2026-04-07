@@ -49,8 +49,33 @@
             font-weight: bold;
             font-size: 16px;
             text-transform: uppercase;
-            margin-bottom: 30px;
+            margin-bottom: 20px; /* Reducido para acercar el horario */
             border-radius: 0 0 15px 15px;
+        }
+
+        /* Sección de Horario */
+        .horario-container {
+            background-color: var(--crema-suave);
+            border: 2px dashed var(--amarillo);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .horario-titulo {
+            color: var(--vino);
+            font-weight: 900;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .horario-detalle {
+            color: var(--texto-oscuro);
+            font-size: 15px;
+            line-height: 1.6;
+            font-weight: bold;
         }
 
         /* Tarjeta de categoría con fondo vino */
@@ -155,6 +180,14 @@
         <img src="logo.jpeg" alt="La Botanita Logo">
     </div>
     <div class="welcome-banner">¡Las mejores botanitas para ti!</div>
+
+    <div class="horario-container">
+        <div class="horario-titulo">🕒 Nuestro Horario 🕒</div>
+        <div class="horario-detalle">
+            Lunes a Viernes: 12:00 p.m. - 7:00 p.m.<br>
+            Sábado y Domingo: 1:30 p.m. - 7:00 p.m.
+        </div>
+    </div>
 
     <div class="card-categoria">
         <div class="titulo-categoria">
